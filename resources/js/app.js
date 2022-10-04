@@ -1,9 +1,48 @@
-// Your application should meet the requirements listed below:
-// 1. Selects from a pool of at least ten names of your classmates.
-// 2. A 'Generate Random Names' button that initiates the selection of 4 random names.
-// 3. The selected random names are displayed to the browser.
-// 4. Each time the Generate Random Names button is pressed, a new set of names appears 
-//    (replacing the previous set of 4 random names)
-// 5. A button named 'Clear' that removes the populated list from the screen
-// 6. The application should be designed to be visually pleasing. 
-// Note: Do not spend too much time on design. Focus primarily on functionality(i.e. steps 1-5).
+
+const names = ["Belinda", "Slammy" , "LeRoy" , "Reggie" , "Hanna" , "Hareg" , "Safiya" , "Safi" , "Shaquae" , "Amanda"];
+const btn = document.querySelector('button');
+const clearButton = document.getElementById('clear-btn');
+const numOfNamesButton = document.getElementById('numofnames-btn');
+const nameBox = document.getElementById("name-box");
+
+function getMultipleRandom(names, num) {
+  const shuffled = [...names].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, num);
+}
+
+function getNames(event){
+  nameBox.innerHTML= getMultipleRandom(names, 4);
+}
+btn.onclick = getNames;
+
+
+function clearNames(event){
+  nameBox.hidden = true ;
+}
+clearButton.onclick = clearNames;
+
+
+function desiredNumOfNames(){
+let numOfNames = Number(window.prompt("Please enter the number of desired names"));
+  if (numOfNames >= 1 && numOfNames <=10) {
+    nameBox.innerHTML = getMultipleRandom(names, numOfNames);
+  }else{
+    alert("Please enter a number between 1 and 10.")
+  }
+}
+
+numOfNamesButton.onclick = desiredNumOfNames;
+
+
+
+
+
+
+ // Practice Function
+// const btn = document.querySelector('button');
+//
+// function greet(event) {
+//   nameBox.innerHTML = 'hi'
+// }
+//
+// btn.onclick = greet;
