@@ -1,0 +1,27 @@
+body{
+  background-color: #EDDBC0;
+  font-family: 'Inter Tight', sans-serif;
+}
+button{
+  background-color: #06283D;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 20px;
+
+}
+#heading{
+  color: #06283D;
+}
+.grid{
+  display:grid;
+  place-items: center;
+}
+.names-box{
+  background-color: #D8D8D8;
+  color: #06283D;
+  border-radius: 25px;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
