@@ -12,16 +12,22 @@
 <!--user name prompt input-->
       <p id="helloWorld" onclick="changeMe();"><h1> Anime Team Randomizer </h1> </p>
         <p id="enterYourName"> </p>
-          <button onclick="enterName();"> Click To Insert Name </button>
+          <input type="text" onclick="enterName();" placeholder=" "> <h2>Insert Name</h2> </input>
+
+          
 <!--choose your team title that changes to the team name as the team selection button is pressed.-->
           <h2 id ="ranBtn" onclick="randomName();"> Choose Your Team </h2>
            
-    
+  
+
 <!--form that stores the character select and reset button-->     
     <form class="formDesign">     
       <input type="button" id="ranBdtn" onclick="randomName();" name="ranBtn" value="Character Select">
           <input type="submit" value="Reset">
+         
        </input>
+       
+
     </form>
 
   </div>

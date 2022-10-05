@@ -29,6 +29,7 @@ enterName = () => {
 };
 
 
+
 //Change the Anime Team Randomizer title if clicked.
 changeMe = () =>{
  document.getElementById('helloWorld').innerHTML ="Yo, you got this!";
