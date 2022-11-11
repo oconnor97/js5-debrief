@@ -1,5 +1,5 @@
 # Random Name Generator
-![random-name](https://user-images.githubusercontent.com/102535399/199258016-bacadcb5-8e16-45b6-abcf-94ef28cf5437.png)
+![randomname](https://user-images.githubusercontent.com/102535399/201371229-eb937fb6-ffcf-4602-bda9-16a2b081507d.gif)
 
 ## Overview
 
